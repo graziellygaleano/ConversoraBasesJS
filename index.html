@@ -6,7 +6,18 @@
     <title>Calculadora de Base</title>
 </head>
 <body>
-    <h1>Calculadora de Base</h1>
-    <script src="calculadoraDeBasesJS.js"></script>
-</body>
+    <h1>Conversora de Base</h1>
+
+    <form id="formConversorBase">
+        <input name="numeroConversao" type="number" min="0" placeholder="Insira um decimal" required>
+        <button type="submit">Enviar</button>
+    </form> 
+
+    <p id="numeroConvertido"></p>
+
+    <h1 id="tituloHistorico"></h1>
+    <p id="historicoConvertido"></p>
+
+
+    <script type="module" src="processadorDados.js"></script></body>
 </html>
