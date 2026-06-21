@@ -1,16 +1,15 @@
 // VARIAVEL GLOBAL
-const historico = {}
 
 // FUNÇÃO DE CONVERTER DECIMAL P/ BINÁRIO
 export function decPbin(n) {
-	let binario = []
+	const binario = []
 	let p = 0
 	const numero = n
+	let nBinario = ""
 	
 	if (n === 0) {
-		let nBinario = "0"
-		historico[numero] = nBinario
-		return {numero, nBinario, historico}
+		nBinario = "0"
+		return {numero, nBinario}
 	}
 		
 
@@ -28,10 +27,11 @@ export function decPbin(n) {
 
 		n = Math.floor(n/2)
 	}
-	let nBinario = binario.reverse().join('')
-	historico[numero] = nBinario
+	nBinario = binario.reverse().join('')
+	
+	return {numero, nBinario}
 
-	return {numero, nBinario, historico}
+
 }
 
 
