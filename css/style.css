@@ -5,6 +5,10 @@
     flex-direction: column;
 }
 
+.container h1 {
+    font-size: 4em;
+}
+
 .container-forms {
     margin-bottom: 10px;
 }
