@@ -4,7 +4,18 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body {
+    /* Ativa a rolagem ÚNICA e exclusivamente na página inteira (no canto direito) */
+    overflow-y: auto; 
+    
+    /* Configurações de alinhamento do Flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinha o bloco bege pelo topo para não sumir ao rolar */
+    
+    /* Um espaçamento seguro para o bloco bege não colar nas bordas da tela */
+    padding: 40px 15px; 
+}
 /* 2. Reseta elementos específicos de texto e listas */
 ul, ol {
     list-style: none;

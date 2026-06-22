@@ -1,4 +1,3 @@
-
 * {
     margin: 0px;
     padding: 0px;
@@ -7,13 +6,20 @@
 
 :root {
     --background-color: #a65fbe;
+    --container: rgb(252, 237, 206);
     --submit: #44934d;
     --delete: #9d2525;
     --texto-padrao: black;
+    --destaque: #652a79;
 }
 
 body {
     background-color: var(--background-color);
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 
 }
 
@@ -22,12 +28,22 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100%;
+    max-width: 1000px;
+    background-color: var(--container);
+    border-radius: 50px;
+    margin: auto;
+    padding: 50px;
+    box-shadow: 6px 6px 10px 18px rgba(0, 0, 0, 0.1);
+    border: .5px solid black;
 }
 
 #titulo-pagina {
-    font-size: 3em;
+    font-size: 4em;
     margin-top: 30px;
     margin-bottom: 20px;
+    color: var(--destaque);
+    -webkit-text-stroke: 0.1px #00000050;
 }
 
 .container-forms {
@@ -43,12 +59,12 @@ body {
     margin: auto;
     margin-bottom: 15px;
     font-weight: bolder;
-    
+
 }
 
-.pergunta::placeholder{
+.pergunta::placeholder {
     color: var(--texto-padrao);
-    opacity: 0.6;   
+    opacity: 0.6;
 }
 
 #formConversorBase .pergunta {
@@ -83,16 +99,16 @@ body {
 
 .botao[type="submit"] {
     background-color: var(--submit);
-    border:2px solid #1e4923;
+    border: 2px solid #1e4923;
 }
 
 .botao[type="button"] {
     background-color: var(--delete);
-    border:2px solid #4c0c0c;
+    border: 2px solid #4c0c0c;
 }
 
 #historico {
-    margin: 0px 30px 10px 30px;
+    margin: auto;
 
 }
 
