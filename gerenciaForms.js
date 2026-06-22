@@ -1,6 +1,10 @@
 import { decPbin } from "./funcoesConversores/conversorBinario.js";
 import { addHistorico, imprimeHistorico, apagaHistorico } from "./manipulaHistorico.js";
 import { imprimeResultado } from "./manipulaResultado.js";
+<<<<<<< HEAD
+=======
+
+>>>>>>> ed0157216f7ecf7b3d4be9692ad481648a5a93f9
 
 imprimeHistorico()
 
