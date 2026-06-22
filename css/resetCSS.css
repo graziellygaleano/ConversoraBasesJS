@@ -1,0 +1,33 @@
+/* 1. Seleciona absolutamente todos os elementos, incluindo os antes e depois (:before, :after) */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Reseta elementos específicos de texto e listas */
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; /* Faz o link herdar a cor do texto pai, tirando aquele azul padrão */
+}
+
+/* 3. Melhora a consistência de elementos de formulário e imagens */
+input, select, textarea, button {
+    font: inherit;       /* Força a herdar a fonte do body (tira o visual de 'sistema antigo') */
+    border: none;        /* Remove as bordas tridimensionais padrão */
+    background: transparent; /* Remove fundos cinzas de botões e inputs */
+    outline: none;       /* Remove aquela linha azul de foco (use com cuidado por acessibilidade) */
+}
+
+button {
+    cursor: pointer;     /* Garante que todo botão mostre a 'mãozinha' ao passar o mouse */
+}
+
+img, picture, video, canvas, svg {
+    display: block;      /* Remove um espaço em branco bizarro que fica embaixo de imagens */
+    max-width: 100%;     /* Garante que imagens nunca estourem a largura da tela */
+}

@@ -5,28 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Base</title>
+    <link rel="stylesheet" href="css/resetCSS.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <div class="container">
-        <h1>Conversora de Base</h1>
+        <h1 id="titulo-pagina">Conversora de Base</h1>
 
         <div class="container-forms">
             <form id="formConversorBase">
-                <input name="numeroConversao" type="number" min="0" placeholder="Insira um decimal" required>
-                <select name="baseConversao" id="baseConversao">
-                    <option value="" disabled selected>Selecione uma base...</option>
-                    <option value="binario">Binário</option>
-                </select>
-                <button type="submit">Enviar</button>
+                <div class="perguntas-form">
+                    <input class="pergunta" name="numeroConversao" type="number" min="0" placeholder="Insira um decimal" required>
+                    <select class="pergunta" name="baseConversao" id="baseConversao">
+                        <option value="" disabled selected>Selecione uma base...</option>
+                        <option value="binario">Binário</option>
+                    </select>
+                </div>
+                <div class="botoes">
+                    <button class="botao" type="submit">Enviar</button>
+                    <button class="botao" type="button" id="botaoApagar" type="button">Apagar histórico</button>
+                </div>
+
             </form>
         </div>
-        <button id="botaoApagar" type="button">Apagar histórico</button>
+
+        <p id="numeroConvertido"></p>
     </div>
 
 
-    <p id="numeroConvertido"></p>
+    
 
     <div id="historico">
         <h1 id="tituloHistorico"></h1>
