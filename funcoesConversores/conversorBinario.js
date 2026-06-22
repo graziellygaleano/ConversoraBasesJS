@@ -4,12 +4,12 @@
 export function decPbin(n) {
 	const binario = []
 	let p = 0
-	const numero = n
+	const decimal = n
 	let nBinario = ""
 	
 	if (n === 0) {
 		nBinario = "0"
-		return {numero, nBinario}
+		return {decimal, nBinario}
 	}
 		
 
@@ -28,8 +28,11 @@ export function decPbin(n) {
 		n = Math.floor(n/2)
 	}
 	nBinario = binario.reverse().join('')
+
+	console.log(decimal)
+	console.log(nBinario)
 	
-	return {numero, nBinario}
+	return {decimal, nBinario}
 
 
 }

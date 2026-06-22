@@ -10,17 +10,21 @@
 
     <form id="formConversorBase">
         <input name="numeroConversao" type="number" min="0" placeholder="Insira um decimal" required>
+
+        <input name="baseConversao" type="text" placeholder="Base de conversão" required>
         <button type="submit">Enviar</button>
     </form> 
-    <button id="apagaHistorico" type="button">Apagar histórico</button>
+    <button id="botaoApagar" type="button">Apagar histórico</button>
 
 
     <p id="numeroConvertido"></p>
 
-    <h1 id="tituloHistorico"></h1>
-    <p id="historicoConvertido"></p>
+    <div id="historico">
+        <h1 id="tituloHistorico"></h1>
+        <ul id="historicoLista"></ul>
+    </div>
 
 
 
-    <script type="module" src="processadorDados.js"></script></body>
+    <script type="module" src="gerenciaForms.js"></script></body>
 </html>
