@@ -24,10 +24,12 @@ export function addHistorico(tipo,chave,valor) {
 export function imprimeHistorico() {
     const historico = JSON.parse(localStorage.getItem('historico')) || []
 
-
     // INSERE TITULO HISTÓRICO
-    const tituloHistorico = document.getElementById('tituloHistorico')
-    tituloHistorico.innerHTML = "Histórico de Conversões:"
+    if (historico.length) {
+        const tituloHistorico = document.getElementById('tituloHistorico')
+        tituloHistorico.innerHTML = "Histórico de Conversões:"
+    }
+
 
     // INSERE LINHAS DO HISTÓRICO
     let historicoFinal = ''

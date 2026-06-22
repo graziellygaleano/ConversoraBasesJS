@@ -3,6 +3,8 @@ import { addHistorico, imprimeHistorico, apagaHistorico } from "./manipulaHistor
 import { imprimeResultado } from "./manipulaResultado.js";
 import { tratarDado } from "./tratamentoDados.js";
 
+imprimeHistorico()
+
 // separa em variavel os elementos 
 const forms = document.getElementById('formConversorBase')
 const botaoApagar = document.getElementById('botaoApagar')
