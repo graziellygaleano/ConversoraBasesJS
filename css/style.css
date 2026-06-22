@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-forms {
+    margin-bottom: 10px;
+}
+
+.forms-perguntas {
+    margin-bottom: 30px;
+}
+
+#formConversorBase {
+}
