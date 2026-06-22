@@ -39,6 +39,8 @@ body {
 }
 
 #titulo-pagina {
+    text-align: center;
+    text-wrap: balance;
     font-size: clamp(2.5rem, 6vw, 4rem);
     margin-top: 30px;
     margin-bottom: 20px;
