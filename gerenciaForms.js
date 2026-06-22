@@ -1,7 +1,7 @@
 import { decPbin } from "./funcoesConversores/conversorBinario.js";
 import { addHistorico, imprimeHistorico, apagaHistorico } from "./manipulaHistorico.js";
 import { imprimeResultado } from "./manipulaResultado.js";
-import { tratarDado } from "./tratamentoDados.js";
+
 
 imprimeHistorico()
 
