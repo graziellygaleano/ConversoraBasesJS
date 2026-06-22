@@ -8,8 +8,9 @@ imprimeHistorico()
 // separa em variavel os elementos 
 const forms = document.getElementById('formConversorBase')
 const botaoApagar = document.getElementById('botaoApagar')
+const escolherBase = document.getElementById('baseConversao')
 
-// começa a buscar o evento dentro de "forms"
+
 forms.addEventListener('submit', function (event) {
     console.log('Entrou na func')
 
@@ -19,9 +20,8 @@ forms.addEventListener('submit', function (event) {
 
     const n = Number(dadosForm.get('numeroConversao'))
     console.log(n)
-    let base = dadosForm.get('baseConversao')
 
-    base = tratarDado(base)
+    let base = dadosForm.get('baseConversao')
 
     switch (base) {
         case 'binario': {
